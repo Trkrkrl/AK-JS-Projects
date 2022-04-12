@@ -1,0 +1,27 @@
+Sudoku 
+
+Sudoku APı kullanılacak
+Girli olan sayılara göre Sudoku API string şeklinde bir dönüş verir
+Tüm bulmacalar çözülmeyebilri
+
+-
+indexte src vermeyi unutma 
+index htmlde puzzle idsinde bir div ve solve-button id  s,nde b,r button oluşturduk
+bu puzzle a js de puzzleboard dedik ve js de  for döngüsüyle input karelerini bu boarda atadık
+bunu for döngüsü içerisinde yaptık
+
+-
+booardda 9*9 olmasaı içn css e gel
+puzzle ve puzzle  input id sindeki elementlere özel css ini yap kutuya sığdır
+-
+js ye gel
+submissions arrayi olustur
+kutucuklarda değer var ise bu değeri arraye göder, yok ise nokta gönder 
+tabi bunun çalışması için butona addeventlistener ile bağla
+-
+const solve icerisine apideki kodu kopyalayıp yapıştırdık
+-
+html e axios için src ekledik-axios oackage kulllanamızı sağalyacak
+bu sayede app.js teki const axiosu kaldırdık
+
+

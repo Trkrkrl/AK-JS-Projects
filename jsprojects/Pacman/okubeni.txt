@@ -1,0 +1,50 @@
+PACMAN
+
+CSS VE SCRIPT i koy htmle
+grid html oluştur
+
+css
+-
+j s ye gel
+grid
+score -ve genişlik i tanımla
+layout arrayini tanımlar,: sayıları hocadan aldım
+bu sayıların ne anlama gelidiğini js de lejantta verdim
+bu sayıalra gelen elemanların karşılığında hepsinin CSS i ayrı olmalı
+css ile şekilleri ve renklerini tanımladık
+-
+Şimdi js de for döngüsü- 784 karedeki her bir karenin şekline kavuşmasını sağlayalım
+-
+pacmani harekete ettirmek için if elseli bir fonksiyon yazdık   
+fakat şu anda sadece üzerine gelebiliyor: duvara giriyor- 
+yemleri yedikten sonra yemler silinmiyor
+
+duvardan geçmediğinden emin olmak için  case if yapılarınınn  içerisini gü ncelleyelim
+duvar için ek koşular eklendi
+aynı şekilde yasak bölge-merkezdeki-ghostlair de üstüne gidemesin
+ öncelikle kutulara sayılarına karşılık atanan claslara ghostlair i  de ekleyelim
+-
+Eğer pacman sol veya sağ tarafta bulunan çıkışlarda ise
+-
+ Yem İN ÜZERİNE GELİRSE YEMİ YESİN
+ pac-dot classa gelirse score artsın ve score gözüksün
+ buna ek olarak pacd0t classtaki o elementi silsin
+-
+hayaletler için  constructor method ile
+contructor methodu oluşturduk 
+buna uygun şekilde 4 tane hayaleti oluşturduk- hız ve konumu verdik
+şimdi css de renklerini verelim
+-
+hayaletlere classları ata
+grid üzerine bu görsel classları ve ayreten hayalet tipinde olduğunu belrtemk için ghost classını ata
+tüm hayaletleri random hareket ettirecek method yazalım
+-
+
+yoruma bıraktığımız üç fonksiyona dönelim- pacdtoeaten altındaki
+power pellet yerse hayalet yiyebilri ve 100p kazanır
+game over-calisiyor
+check for win
+
+
+son durum-  korkak hayalet seni yerse puan geliyor-tersini de yapmak gerek
+

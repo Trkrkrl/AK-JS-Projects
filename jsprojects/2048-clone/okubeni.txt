@@ -1,0 +1,13 @@
+2048 klonu
+
+add event listener  in içerisine(ki bu en büyük parantezimiz)
+grid score ve result display 
+oluşturduk bunları id veya class a göre ayarladık
+
+tahta oluşturma fonksiyonu yazdık bunu for döngüsüne verdik
+bundan önce tahtanın genişliği 4 * 4 kare olacak dedik
+kareler squares arrayde toplanacak
+
+square adlı divler oluşturduk
+bunların html  ini 0 dedik ve  array e push ettik  
+calistirirsak- sarı ekranda 4 e 4e kareler hepsinde sıfırı yazıyo ok
