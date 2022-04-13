@@ -11,3 +11,43 @@ kareler squares arrayde toplanacak
 square adlı divler oluşturduk
 bunların html  ini 0 dedik ve  array e push ettik  
 calistirirsak- sarı ekranda 4 e 4e kareler hepsinde sıfırı yazıyo ok
+-
+Css e geçelim 0  sayısı biraz büyük bu ve diğer şeylerde düzenleme ypaılm
+-
+oyun başında 2 adet rastgele sayı olacak
+bunun için sayı generate etme fonksiyonu yapalım
+
+bu generate fonksiyonunu create borad içerisinde çalıştıralım
+bunu 2 tane altalta yapalım k, 2 farklı sayı oluşturulacak
+
+-
+swipe -kaydırma-fonksiyonu kodlarını yazalım
+
+sağa kayddırma ve sola kayddırma fonksiyonlarını yazdık
+yan yana aynı sayılar gelince irleşmesini saplayan combine fonksiyonu yazdık
+-combine fonksyionu ile ilgili şüphelerim var
+daha sonra tuşa basabilmek için addEventListenerherhangibir tuşa basınca control çalışsın
+control basıllan tuşa göre sağ sol vs hangisi olduğunu tanımlasın
+basılan tuşun çağıracağı fonksiyonları çağırsın
+-
+yukarı ve aşağı yapılacak
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
