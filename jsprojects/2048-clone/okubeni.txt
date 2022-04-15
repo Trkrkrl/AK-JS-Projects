@@ -32,17 +32,27 @@ basılan tuşun çağıracağı fonksiyonları çağırsın
 -
 yukarı ve aşağı yapılacak
 
+move up ve move down fonksiyonlarımızı yazdık
++1 yerine + width kkoyduk left righta göre farkı bunlar
+keyup keydown methodlarını yazdık
+combine column yazdık
+
+bunları Controll methodunda belirtelim
 
 
+-
+gameover ve checkwin methodları yazdık
+check win i combine  row ve columnda çağırdık
+gameover i generate ieçrsiinde çağırdık
 
+-
+score gösterdik ve bu scoreu her harekette artıracak ilşemleri yaptık
 
+-
+renklendirme ekledik- 
 
-
-
-
-
-
-
+-
+css te ve indext html de düzenlemeler yapıalrak oyunun orjinal mversiyanuna benzer hale getirildi
 
 
 
