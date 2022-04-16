@@ -1,0 +1,45 @@
+body{
+    margin:0;
+    padding:0;
+    background-color:#652ebf;
+    color:#fff;
+    font-family:'Trebuchet MS',Arial;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+/* columnların üstüste gelmesini önlemek için*/
+#game{
+    display:flex;
+}
+
+
+
+
+
+.genre-column{
+display:flex;
+flex-direction: column;
+text-align: center;
+
+}
+.card{
+    width: 200px;
+    height: 120px;
+    border-radius: 20px;
+    background-color: blue;
+    text-align: center;
+    padding:5 px;
+    margin:10px;
+    border: solid yellow 5px;
+    
+
+}
+.correct-answer{
+    background-color: green;
+}
+.wrong-answer{
+    background-color: red;
+}

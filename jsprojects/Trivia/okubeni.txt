@@ -1,0 +1,46 @@
+Trivia Appl
+
+Bu uygulamada Trivia APı dan faydalanacağız
+
+adres:  https://opentdb.com/api_config.php
+bu adresten isteğine göre bir sorular oluşturacak api url generate diyorsun
+https://opentdb.com/api.php?amount=10&category=22&difficulty=easy&type=boolean
+
+fakat bu urlyi nasıl manipüle edeceğimizi biliyoruz
+
+önyüzde seçtiğimiz kategor,ye göre url oluşup apiye gidebilir
+
+levels . foreach ile levels arrayi içerisinde tüm leveller in her birinini
+atandığı ayrı bir url apiye gidip veri alır
+
+-
+apşden gelen veriyi kurucukların htmlinde kullandık
+data questioon ve data answer şeklinde yazdık
+ kutucuklara zorluk seviyesine göre 100-200-300 verdik
+ bu sayılara setattribute da ihtiyacımız var- bu inner html bilglierini çekmek için getinnnerthtml methodu kullandık
+
+ sonra fetch dışında foreach içerisinde  carda tıklayınca oluşacak eylem işçin eventlistener yaptık
+ 
+ -
+ genres arrayi oluşturduk ve içerisine türleri yerleştirdik
+
+ foreach ile her bir türe ait column oluşturduk
+ kolonların yanyana durması için  css te flex yaptık
+ -
+ şimdi flipcardı yapalım
+ butonları yaptık içeriğini atadık
+ textin inner htmlini atadık
+ carda basınca içerik ve butonlar gözüksün
+ -
+ tıklama sayısını sınırlayalım 1 kere aynı kutuya tıklanabilsin
+ -
+ her bir card a tıklanaabileme 
+ tıklandıktan sonra cevaplayana kadar diğer kareleri  tıklamaya kaapt
+ ceveaplayında doğru yanlış aksiyonalrı
+ diğer sorulara tıklanabilmesi
+ -
+ bazen soru datası gelimiyor bununla iliglis  olarak da
+ .then ile çözdük
+
+ -tıklama ile ilgili: ardarda başkalarına tıklama sıkıntısı çıkarıyro onun harici no problem
+
