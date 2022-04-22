@@ -1,0 +1,89 @@
+Twitch chat app clone projesine hoş geldin
+Bu clone projesini takip ettiğim video linki: https://youtu.be/xyiuBEBv0_0
+
+-
+Bu clone yapılırken chat imkanı sunana bir API kullanılacak
+https://dashboard.getstream.io/
+ sitesine üye olmalısın -burada sana geçici bir API sağlanacak
+-
+Buna ekk olarak Getstream SDK  e ihtiyacımız var
+-bu sdk ile birçok UI Componente ulaşabilceğiz
+
+-öncelikle bu uygulamız bir react projesi olacak
+sen kendin bir klasör oluşturma sakın hep boka sarıyor
+projelerim klasörümde sağtık vs code
+buklasörde terminalle oluştur projeni-
+alt katmanda artık bir twitch-clone adında projemiz var
+
+https://create-react-app.dev/docs/getting-started/ 
+bu sayfada yönergeler var-bende aşağıdaki npx direkt çalışmamıştı ve bu sayfadaki söylenen şekilde 2 tane remove işlemi yaptım
+sonra aşağıdaki npx i terminale girdim
+npx create-react-app twitch-clone
+y iledevam et-sorarsa
+
+-
+twitch proje dosyasınının boş biyerine tıkla open terminal ayrı bir terminalde aç : npm  run start
+bu chrome da bir  sayfa açacak localhost 3000
+-buşimdi gereksiz dosyaları silelim
+önce app.js deki gereksiz yerleri ve hazır templateten gelen html kodlarını sileriz
+setuptesti sil
+logo yu sileriz
+reportu sil
+apptest i sil
+app.css sil
+index.js deki importlardan gereksiz olan reportlu şeyi sil
+-
+UI elementleri yüklemek için stream i yükleyelim
+npm install stream-chat stream-chat-react : hata alıyorum dependency ile ilgili
+
+yarn yükledim
+yarn add stream-chat stream-chat-react ; ile yükleyebildim
+-
+sitedeki uı:basics-getting starteddeki  kod örneği ile başlayalım
+app js içersiindeki mevcut fonksiyon yerine bunu yapıştıralım
+dikkat en alttaki export app yazan şey  kalmalı
+
+fakat çallışması iççin importlar  yapılmallı
+ + client tanımlanmalı api key le beraber
+ dashboard daki apikeyini kopyala
+ -dökümantasyona dön:https://getstream.io/chat/docs/react/?language=javascript
+
+ channel oluşturalım-şu an dökümantasyondaki channel kodları ile, hocadakiler uyuşmmuyor
+ hocadakini bakarak yazacağım
+ -kısaca 
+ client oluşturduk
+ bu client ile fake bir kullanıcı girşi sağladık
+ fake bir kanalda örnek kullanıcıalr va
+ kulllanıcı gişri yapılan kullanıcı için token gerekli
+ token ilerde clientle otomatik oluşturulacak fakat dahalık oraya gelmedik
+backendde oalcak yanii:
+
+ manuel yapacağız:https://getstream.io/chat/docs/react/tokens_and_authentication/?language=javascript
+
+ burada manuel e gel : user id ye daave mathews u yaz , sana bir token verecek
+ bunu al  app.js de client.connectuser ieçrsiinde  usertoken  yerine string şeklinde'' yapıştır
+ -
+ docs takie sumamry kısmını komple alıp yapıştırabiliriz
+ sayfamızdaki herşey gitmeden önce user token ve userkey i bir yere kopyala
+ sonra da sumamrydeki kodu olduğu gibi yapıştır
+
+ https://getstream.io/chat/docs/sdk/react/basics/getting_started/
+
+kodlarımızı yerine yazalım
+-
+return içerisindek channel tag ieçrisine channel={channel} yazdık
+chanllell i define ediyoruz
+peki bu channeli nerede tanımlayalım: app methodu içerisindekiuseeffect ieçrisindeki-tryın sonunda 
+
+Keyle ilgili sıkıntıyı uzaktan çözdüler fakat. kendin çözmek istersen
+Dashboard->chatmessaging->roles&permissions->user - edit->current scope ->gaming->select gaming ->choose create channel and click right arrow  to move it to grants- save
+
+-
+Darkmkode için clientte darkmode = true
+Custom style syampak için aynı yere customstylees yazdık bunun çalışması için de custom css i kppyaladık ve
+bunu app js de bir const olarak ekledik
+----------------------------------------------------------------
+
+
+
+
